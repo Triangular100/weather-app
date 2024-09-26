@@ -1,0 +1,60 @@
+/* Clear Day */
+:root {
+  --filter-white: brightness(0) saturate(100%) invert(95%) sepia(100%)
+    saturate(18%) hue-rotate(269deg) brightness(105%) contrast(104%);
+  --dark-blue-gradient: linear-gradient(135deg, #487ec4 0%, #171e5a 70%);
+  --dark-blue: #32609b;
+  --dark-blue-button-hover: #171e5a;
+  --dark-blue-hover: #ffffff44;
+}
+
+#page.theme-dark-blue #summary {
+  background-color: var(--dark-blue);
+  background: var(--dark-blue-gradient);
+}
+
+#page.theme-dark-blue #summary #weather-icon img {
+  filter: var(--filter-white);
+}
+
+#page.theme-dark-blue #summary #location:hover,
+#page.theme-dark-blue #summary #location.hover {
+  background-color: var(--dark-blue-hover);
+}
+
+#page.theme-dark-blue #summary #temperature-container:hover,
+#page.theme-dark-blue #summary #temperature-container.hover {
+  background-color: var(--dark-blue-hover);
+}
+
+#page.theme-dark-blue #detail #hourly-container .hourly {
+  background-color: var(--dark-blue);
+  background: var(--dark-blue-gradient);
+}
+
+#page.theme-dark-blue #detail #hourly-container .hourly img {
+  filter: var(--filter-white);
+}
+
+#page.theme-dark-blue #detail #daily-container .daily {
+  border-bottom: 4px solid var(--dark-blue);
+}
+
+#page.theme-dark-blue #detail #daily-container .daily:last-child {
+  border: none;
+}
+
+#page.theme-dark-blue .form-container form button {
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+#page.theme-dark-blue .form-container form button:hover {
+  color: white;
+  background-color: var(--dark-blue-button-hover);
+}
+
+#page.theme-dark-blue footer {
+  background-color: var(--dark-blue);
+  background: var(--dark-blue-gradient);
+}

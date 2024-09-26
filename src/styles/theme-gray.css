@@ -1,0 +1,60 @@
+/* Clear Day */
+:root {
+  --filter-white: brightness(0) saturate(100%) invert(95%) sepia(100%)
+    saturate(18%) hue-rotate(269deg) brightness(105%) contrast(104%);
+  --gray-gradient: linear-gradient(135deg, #b3b5ba 0%, #666c7d 70%);
+  --gray: #666c7d;
+  --gray-button-hover: #575c68;
+  --gray-hover: #00000044;
+}
+
+#page.theme-gray #summary {
+  background-color: var(--dark-blue);
+  background: var(--gray-gradient);
+}
+
+#page.theme-gray #summary #weather-icon img {
+  filter: var(--filter-white);
+}
+
+#page.theme-gray #summary #location:hover,
+#page.theme-gray #summary #location.hover {
+  background-color: var(--gray-hover);
+}
+
+#page.theme-gray #summary #temperature-container:hover,
+#page.theme-gray #summary #temperature-container.hover {
+  background-color: var(--gray-hover);
+}
+
+#page.theme-gray #detail #hourly-container .hourly {
+  background-color: var(--dark-blue);
+  background: var(--gray-gradient);
+}
+
+#page.theme-gray #detail #hourly-container .hourly img {
+  filter: var(--filter-white);
+}
+
+#page.theme-gray #detail #daily-container .daily {
+  border-bottom: 4px solid var(--dark-blue);
+}
+
+#page.theme-gray #detail #daily-container .daily:last-child {
+  border: none;
+}
+
+#page.theme-gray .form-container form button {
+  color: white;
+  background-color: var(--gray);
+}
+
+#page.theme-gray .form-container form button:hover {
+  color: white;
+  background-color: var(--gray-button-hover);
+}
+
+#page.theme-gray footer {
+  background-color: var(--dark-blue);
+  background: var(--gray-gradient);
+}

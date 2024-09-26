@@ -1,0 +1,60 @@
+/* Clear Day */
+:root {
+  --filter-white: brightness(0) saturate(100%) invert(95%) sepia(100%)
+    saturate(18%) hue-rotate(269deg) brightness(105%) contrast(104%);
+  --dark-blue-gray-gradient: linear-gradient(135deg, #5b748e 0%, #1a1a31 70%);
+  --dark-blue-gray: #171e5a;
+  --dark-blue-gray-button-hover: #070a22;
+  --dark-blue-gray-hover: #ffffff44;
+}
+
+#page.theme-dark-blue-gray #summary {
+  background-color: var(--dark-blue-gray);
+  background: var(--dark-blue-gray-gradient);
+}
+
+#page.theme-dark-blue-gray #summary #weather-icon img {
+  filter: var(--filter-white);
+}
+
+#page.theme-dark-blue-gray #summary #location:hover,
+#page.theme-dark-blue-gray #summary #location.hover {
+  background-color: var(--dark-blue-gray-hover);
+}
+
+#page.theme-dark-blue-gray #summary #temperature-container:hover,
+#page.theme-dark-blue-gray #summary #temperature-container.hover {
+  background-color: var(--dark-blue-gray-hover);
+}
+
+#page.theme-dark-blue-gray #detail #hourly-container .hourly {
+  background-color: var(--dark-blue-gray);
+  background: var(--dark-blue-gray-gradient);
+}
+
+#page.theme-dark-blue-gray #detail #hourly-container .hourly img {
+  filter: var(--filter-white);
+}
+
+#page.theme-dark-blue-gray #detail #daily-container .daily {
+  border-bottom: 4px solid var(--dark-blue-gray);
+}
+
+#page.theme-dark-blue-gray #detail #daily-container .daily:last-child {
+  border: none;
+}
+
+#page.theme-dark-blue-gray .form-container form button {
+  color: white;
+  background-color: var(--dark-blue-gray);
+}
+
+#page.theme-dark-blue-gray .form-container form button:hover {
+  color: white;
+  background-color: var(--dark-blue-gray-button-hover);
+}
+
+#page.theme-dark-blue-gray footer {
+  background-color: var(--dark-blue-gray);
+  background: var(--dark-blue-gray-gradient);
+}

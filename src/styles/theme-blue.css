@@ -1,0 +1,60 @@
+/* Clear Day */
+:root {
+  --filter-white: brightness(0) saturate(100%) invert(95%) sepia(100%)
+    saturate(18%) hue-rotate(269deg) brightness(105%) contrast(104%);
+  --blue-gradient: linear-gradient(135deg, #8dbeff 0%, #5c6ef6 70%);
+  --blue: #5c6ef6;
+  --blue-button-hover: #4b59c8;
+  --blue-hover: #00000044;
+}
+
+#page.theme-blue #summary {
+  background-color: var(--blue);
+  background: var(--blue-gradient);
+}
+
+#page.theme-blue #summary #weather-icon img {
+  filter: var(--filter-white);
+}
+
+#page.theme-blue #summary #location:hover,
+#page.theme-blue #summary #location.hover {
+  background-color: var(--blue-hover);
+}
+
+#page.theme-blue #summary #temperature-container:hover,
+#page.theme-blue #summary #temperature-container.hover {
+  background-color: var(--blue-hover);
+}
+
+#page.theme-blue #detail #hourly-container .hourly {
+  background-color: var(--blue);
+  background: var(--blue-gradient);
+}
+
+#page.theme-blue #detail #hourly-container .hourly img {
+  filter: var(--filter-white);
+}
+
+#page.theme-blue #detail #daily-container .daily {
+  border-bottom: 4px solid var(--blue);
+}
+
+#page.theme-blue #detail #daily-container .daily:last-child {
+  border: none;
+}
+
+#page.theme-blue .form-container form button {
+  color: white;
+  background-color: var(--blue);
+}
+
+#page.theme-blue .form-container form button:hover {
+  color: white;
+  background-color: var(--blue-button-hover);
+}
+
+#page.theme-blue footer {
+  background-color: var(--blue);
+  background: var(--blue-gradient);
+}

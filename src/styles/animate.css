@@ -1,0 +1,28 @@
+.shake {
+  /* Jump and shake 3 times */
+  animation: jump-and-shake 1.5s 2;
+}
+
+@keyframes jump-and-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  35% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  55% {
+    transform: translateY(-8px) rotate(-5deg);
+  }
+  65% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
